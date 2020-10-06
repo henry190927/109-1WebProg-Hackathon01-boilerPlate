@@ -64,6 +64,21 @@ body > h1{
 .date{
     text-align: top;
     vertical-align: top;
+    border-radius: 5px;
+}
+
+.date:hover {
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.onpick {
+    color: white;
+    background-color: #000000;
+}
+
+.onpick:hover {
+    color: white;
+    background-color: #000000;
 }
 
 /*****************Themes*****************/

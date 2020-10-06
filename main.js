@@ -20,3 +20,23 @@ for(var i=0; i<themeButton.length; ++i) {
         document.body.setAttribute('class', e.target.id)
     }, false)
 }
+
+for(var i=0; i<cells.length; i++) {
+	cells[i].addEventListener('click', e => {
+		removeOld();
+		e.target.classList.add("onpick");
+	});
+}
+
+function removeOld() {
+	for(var i=0; i<cells.length; i++) {
+		cells[i].classList.remove("onpick");
+	}
+}
+
+function addCalendar() {
+	var cell = document.getElementsByClassName("onpick");
+	console.log(cell);
+	console.log(input.value);
+	cell.innerHTML = input.value;
+}
